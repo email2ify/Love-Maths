@@ -16,12 +16,25 @@ document.addEventListener("DOMContentLoaded", function(){
             alert("You clicked Submit!");
             } else {
                 let gameType = this.getAttribute("data-type");
-                alert('You clicked $(gameType)');
+                alert(`You clicked ${gameType}`);
+                
             }
         })
       }
 })
+
+/**
+ * The main game "loop", called when the script is first loaded
+ * and after the user's answer has been processed
+ */
+
+
 function runGame(){
+    
+// Create two random numbers between 1 and 25
+
+let num1 = Math.floor(Math.random() * 25) + 1;
+let num2 = Math.floor(Math.random() * 25) + 1;
 
 }
 
